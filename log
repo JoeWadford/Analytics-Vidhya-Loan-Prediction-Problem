@@ -1,0 +1,22 @@
+#teams
+teams$lterminc2amt <- teams$lloanappinc * teams$Loan_Amount_Term
+teams$lloaninc <- log(teams$loan2inc)
+teams$lloanappinc <- log(teams$loan2appinc)
+teams$lLoanAmount <- log(teams$LoanAmount)
+teams$lApplicantIncome <- log(teams$ApplicantIncome)
+teams$lCoapplicantIncome <- log(teams$CoapplicantIncome)
+teams$lTotal_Income <- log(teams$Total_Income)
+teams$ApplicantIncome <- teams$ApplicantIncome +1
+teams$CoapplicantIncome <- teams$CoapplicantIncome +1
+
+#test
+test$lterminc2amt <- test$lloanappinc * test$Loan_Amount_Term
+test$lTotal_Income <- log(test$Total_Income)
+test$lApplicantIncome <- log(test$ApplicantIncome)
+test$lCoapplicantIncome <- log(test$CoapplicantIncome)
+test$lLoanAmount <- log(test$LoanAmount)
+test$ApplicantIncome <- test$ApplicantIncome +1
+test$CoapplicantIncome <- test$CoapplicantIncome + 1
+test$lloaninc <- log(test$loan2inc)
+test$lloanappinc <- log(test$loan2appinc)
+
